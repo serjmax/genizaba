@@ -2,10 +2,10 @@
 layout: "wrapper"
 ---
 
-<h1>All photos here</h1>
-
-{% for file in site.static_files %}
-    {% if file.photo %}
-        <img src="{{ site.baseurl }}{{file.path}}" alt="{{file.name}}">
-    {% endif %}
-{% endfor %}
+<ul class="photos">
+    {% for file in site.static_files %}
+        {% if file.photo %}
+            <li class="photo-item"><img class="photo" src="{{ site.baseurl }}{{file.path}}" alt="{{file.name}}"></li>
+        {% endif %}
+    {% endfor %}
+</ul>
