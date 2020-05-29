@@ -1,7 +1,86 @@
+@font-face {
+    font-family: "Repro-Regular";
+    src: local("Repro-Regular"), url(./fonts/Repro-Regular.woff) format("woff");
+    }
+
+/* Basic Styles */
+*{
+    font-family: Repro-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 32px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+
 a{
-    color: blueviolet;
+    text-decoration: none;
+    color: #9B9C9E;
+    margin-right: 16px;
 }
 
 a.active{
-    color: red;
+    color: black;
+}
+
+/* Head */
+nav{
+    margin-bottom: 64px;
+}
+
+/* Photo */
+.photos{
+    /* columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2; */
+    max-width: 1133px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-item{
+    width: 500px;
+    height: 500px;
+    margin-right: 64px;
+    margin-bottom: 64px;
+}
+
+.photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Video */
+.videos{
+    /* columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2; */
+    max-width: 1133px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-item{
+    width: 500px;
+    height: 500px;
+    margin-right: 64px;
+    margin-bottom: 64px;
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
