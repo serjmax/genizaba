@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="{{ 'css/style.css' | relative_url }}">
+    <link href="https://vjs.zencdn.net/7.8.2/video-js.css" rel="stylesheet" />
 </head>
 <body>
     {% include header.html %}
     {{ content }}
-    
+    <script src="https://vjs.zencdn.net/7.8.2/video.js"></script>
 </body>
 </html>
