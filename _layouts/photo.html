@@ -2,10 +2,13 @@
 layout: "wrapper"
 ---
 
-<ul class="photos">
+
+<div class="photos">
     {% for file in site.static_files %}
         {% if file.photo %}
-            <li class="photo-item"><img class="photo" src="{{ site.baseurl }}{{file.path}}" alt="{{file.name}}"></li>
+            <div class="photo-item">
+                <img class="photo" src="{{ site.baseurl }}{{file.path}}" alt="{{file.name}}"></img>
+            </div>
         {% endif %}
     {% endfor %}
-</ul>
+</div>
