@@ -44,21 +44,24 @@ layout: "wrapper"
         {% if file.video %}
             <li class="video-item">
                 <video
+                    id="my-video"
                     class="video video-js"
                     preload="auto"
                     muted="muted"
                     loop="loop"
+                    controls
                     autoplay
+                    autobuffer
                     width="500"
                     height="500"
                     data-setup="{}"
                 >
-                    <!-- {% if file.extname == ".webm" %}
+                    {% if file.extname == ".webm" %}
                         <source src="{{ site.baseurl }}{{file.path}}" type="video/webm">
-                    {% endif %} -->
+                    {% endif %}
                     {% if file.extname == ".m4v" %}
                         <source src="{{ site.baseurl }}{{file.path}}" type="video/mp4">
-                    {% elsif file.extname == ".ogv" %}
+                    {% elsif file.extname == ".ogg"%}
                         <source src="{{ site.baseurl }}{{file.path}}" type="video/ogg">
                     {% endif %}
                 </video>
