@@ -41,19 +41,22 @@ nav{
 
 /* Photo */
 .photos{
-    /* columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2; */
+    width: 100%;
     max-width: 1133px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
 }
 
 .photo-item{
-    width: 500px;
-    height: 500px;
-    margin-right: 64px;
-    margin-bottom: 64px;
+    width: 44vw;
+    height: 44vw;
+    max-width: 500px;
+    max-height: 500px;
+    margin-bottom: 4vw;
 }
 
 .photo{
