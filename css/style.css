@@ -10,7 +10,7 @@
 
 body{
     margin: 0;
-    padding: 32px;
+    padding: 2vw;
 }
 
 ul{
@@ -27,7 +27,7 @@ li{
 a{
     text-decoration: none;
     color: #9B9C9E;
-    margin-right: 16px;
+    margin-right: 1vw;
 }
 
 a.active{
@@ -36,7 +36,7 @@ a.active{
 
 /* Head */
 nav{
-    margin-bottom: 64px;
+    margin-bottom: 4vw;
 }
 
 /* Photo */
@@ -64,19 +64,22 @@ nav{
 
 /* Video */
 .videos{
-    /* columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2; */
+    width: 100%;
     max-width: 1133px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
 }
 
 .video-item{
-    width: 500px;
-    height: 500px;
-    margin-right: 64px;
-    margin-bottom: 64px;
+    width: 44vw;
+    height: 44vw;
+    max-width: 500px;
+    max-height: 500px;
+    margin-bottom: 4vw;
 }
 
 .video{

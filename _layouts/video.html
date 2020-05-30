@@ -39,17 +39,15 @@ layout: "wrapper"
     });
 </script>
 
-<ul class="videos">
+<div class="videos">
     {% for file in site.static_files %}
         {% if file.video %}
-            <li class="video-item">
+            <div class="video-item">
                 <video
-                    id="my-video"
                     class="video video-js"
                     preload="auto"
                     muted="muted"
                     loop="loop"
-                    controls
                     autoplay
                     autobuffer
                     width="500"
@@ -65,7 +63,7 @@ layout: "wrapper"
                         <source src="{{ site.baseurl }}{{file.path}}" type="video/ogg">
                     {% endif %}
                 </video>
-            </li>
+            </div>
         {% endif %}
     {% endfor %}
-</ul>
+        </div>
