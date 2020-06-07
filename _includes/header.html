@@ -1,9 +1,9 @@
 <nav>
     <ul>
-        <!-- <li><a href="{{ site.baseurl }}/">{{ site.title }}</a></li> -->
-        <li><a style="color: black;" href="{{ '/videos.html' | relative_url }}">{{ site.title }}</a></li>
+        <li><a href="{{ site.baseurl }}/" {% if page.url == "/" %} class="active" {% endif %}>{{ site.title }}</a></li>
+        <!-- <li><a style="color: black;" href="{{ '/videos.html' | relative_url }}">{{ site.title }}</a></li> -->
         <li><a href="{{ '/videos.html' | relative_url }}" {% if page.url == "/videos.html" %} class="active" {% endif %}>video</a></li>
         <li><a href="{{ '/photos.html' | relative_url }}" {% if page.url == "/photos.html" %} class="active" {% endif %}>photo</a></li>
-        <li><a href="{{ '/about.html' | relative_url }}" {% if page.url == "/about.html" %} class="active" {% endif %}>about</a></li>
+        <!-- <li><a href="{{ site.baseurl }}/" {% if page.url == "/" %} class="active" {% endif %}>about</a></li> -->
     </ul>
 </nav>
