@@ -7,7 +7,7 @@ layout: "wrapper"
         {% if file.video %}
             <div class="video-item">
                 <video
-                    class="video video-js"
+                    class="video video-js lazy"
                     preload="auto"
                     muted="muted"
                     loop="loop"
@@ -16,13 +16,14 @@ layout: "wrapper"
                     width="500"
                     height="500"
                     data-setup="{}"
+                    data-src="{{ site.baseurl }}{{file.path}}"
                     poster="assets/videos/cover/cover.gif"
                 >
                     {% if file.extname == ".webm" %}
                         <source src="{{ site.baseurl }}{{file.path}}" type="video/webm">
                     {% endif %}
                     {% if file.extname == ".m4v" %}
-                        <source src="{{ site.baseurl }}{{file.path}}" type="video/mp4">
+                        <source data-src="{{ site.baseurl }}{{file.path}}" type="video/mp4">
                     {% elsif file.extname == ".ogg"%}
                         <source src="{{ site.baseurl }}{{file.path}}" type="video/ogg">
                     {% endif %}
