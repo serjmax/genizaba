@@ -7,7 +7,7 @@ layout: "wrapper"
     {% for file in site.static_files %}
         {% if file.photo %}
             <div class="photo-item">
-                <img class="photo" src="{{ site.baseurl }}{{file.path}}" alt="{{file.name}}"></img>
+                <img class="photo lazy" data-src="{{ site.baseurl }}{{file.path}}" alt="{{file.name}}"></img>
             </div>
         {% endif %}
     {% endfor %}
