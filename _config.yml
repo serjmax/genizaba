@@ -43,6 +43,10 @@ defaults:
       path: "assets/videos"
     values:
       video: true
+  - scope:
+      path: "assets/portraits"
+    values:
+      portraits: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
