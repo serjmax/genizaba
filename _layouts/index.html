@@ -2,13 +2,16 @@
 layout: "wrapper"
 ---
 
-<div class="about">
-
-    <img class="about--photo" src="{{ site.baseurl }}/assets/about/about_1.jpg" alt="{{file.name}}">
-
-
-    <div class="about--text">
-        {{ content }}
-    </div>
-
+<div class="main">
+    <ul class="randomize">
+        {% for file in site.static_files %}
+            {% if file.portraits %}
+                <li class="portraits-item">
+                    <img class="portrait" data-src="{{ site.baseurl }}{{file.path}}" alt="{{file.name}}"></img>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
 </div>
+
+{% include randomize.html %}
