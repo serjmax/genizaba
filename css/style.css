@@ -158,7 +158,7 @@ nav{
 /* About */
 .about{
     width: 100%;
-    max-width: 1133px;
+    max-width: 960px;
     display: flex;
     flex-direction: row;
     margin-left: auto;
