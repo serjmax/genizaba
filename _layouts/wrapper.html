@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="{{ 'css/style.css' | relative_url }}">
-    <!-- <link href="https://vjs.zencdn.net/7.8.2/video-js.css" rel="stylesheet" /> -->
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@16.1.0/dist/lazyload.min.js"></script>
 </head>
 <body>
     {% include header.html %}
     {{ content }}
-    <!-- <script src="https://vjs.zencdn.net/7.8.2/video.js"></script> -->
     <script>
         var lazyLoadInstance = new LazyLoad({
             elements_selector: ".lazy"
