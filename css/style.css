@@ -59,6 +59,46 @@ nav{
     margin-bottom: 4vw;
 }
 
+/* Index */
+.main{
+    width: 100%;
+    max-width: 1133px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.randomize > * {display: none;}
+.randomize > *:nth-child(1){display: block;}
+
+.portraits-item{
+    /* width: 44vw; */
+    /* height: 44vw; */
+    width: 100%;
+    max-width: 700px;
+    max-height: 700px;
+    margin-bottom: 8vw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.portrait{
+    width: 100%;
+    max-width: 700px;
+    max-height: 700px;
+    margin-bottom: 8vw;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+
+
+
 /* Photo */
 .photos{
     width: 100%;
