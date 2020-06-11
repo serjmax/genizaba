@@ -19,7 +19,7 @@
 
 body{
     margin: 0;
-    padding: 2vw;
+    /* padding: 2vw; */
 }
 
 h2{
@@ -56,7 +56,9 @@ a.active{
 
 /* Head */
 nav{
-    margin-bottom: 4vw;
+    position: fixed;
+    margin-left: 16px;
+    margin-top: 8px;
 }
 
 /* Index */
