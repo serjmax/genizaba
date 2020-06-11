@@ -62,7 +62,7 @@ nav{
 /* Index */
 .main{
     width: 100%;
-    max-width: 1133px;
+    /* max-width: 1133px; */
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -74,19 +74,38 @@ nav{
 .randomize > * {display: none;}
 .randomize > *:nth-child(1){display: block;}
 
+.portraits{
+}
+
 .portraits-item{
-    width: 100%;
-    max-width: 450px;
+    width: 100vw;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
 }
 
 .portrait{
     width: 100%;
+    max-width: 500px;
+    /* max-height: 500px; */
+    object-fit: cover;
 }
 
+@media all and (max-width: 700px){
 
+    .main{
+        height: 100vh;
+    }
 
+    .portraits{
+        /* height: 100vw; */
+        overflow: hidden;
+    }
+}
 
 
 /* Music */
